@@ -207,32 +207,6 @@ boostedCorpus = [
     for doc_bow in corpus
 ]
 
-# print("\nCorpus inspection:")
-# for i, doc in enumerate(corpus[:3]):  # check first few
-#     print(f"Doc {i}: {doc}")
-# 
-# print("\nDictionary inspection:")
-# print(f"Number of tokens in dictionary: {len(dictionary)}")
-# print(f"Sample tokens: {list(dictionary.token2id.items())[:10]}")
-# 
-# print("\nFull corpus length:", len(corpus))
-# print("Non-empty docs in corpus:", sum(1 for doc in corpus if len(doc) > 0))
-# print("Empty docs:", [i for i, doc in enumerate(corpus) if not doc])
-# 
-# try:
-#     print("\nSanity check: Training on first 3 documents only")
-#     mini_lda = LdaModel(
-#         corpus=corpus[:3],
-#         id2word=dictionary,
-#         num_topics=2,
-#         passes=10,
-#         iterations=50,
-#         eval_every=None
-#     )
-#     print("Sanity check successful — LDA trained")
-# except Exception as e:
-#     print("Sanity check failed:", e)
-s
 
 num_topics = 30
 chunksize = 27
